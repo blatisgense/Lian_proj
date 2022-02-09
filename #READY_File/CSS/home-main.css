@@ -1,0 +1,54 @@
+/*подсветка выбранной стр  в навбаре*/
+.nav_inner_links_outer_inner li:first-child a {
+    color: #5b56ce;
+}
+
+
+/* Шапка*/
+.home-header_slider_background1 {
+    background-image: url("../background/home_back/header-pic-one.png");
+}
+
+.home-header_slider_background2 {
+    background-image: url("../background/home_back/header-pic-two.png");
+}
+
+.home-header_slider_background3 {
+    background-image: url("../background/home_back/header-pic-three.png");
+}
+
+.home-header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-header_slider {
+    height: calc(100% - 90px);
+    background-size: cover;
+    background-position: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.home-header_slider_inner {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-header_slider_inner_back-butt, .home-header_slider_inner_next-butt {
+    margin: 0 112px;
+}
+
+.home-header_slider div, .home-header_slider a, .home-header_slider img {
+    background-color: unset;
+}
+
+.home-header_slider img:hover {
+    background-color: black;
+    border-radius: 50%;
+}

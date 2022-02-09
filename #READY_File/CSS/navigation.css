@@ -1,0 +1,71 @@
+/* Навигация (неизменна)*/
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+
+.nav img, .nav a{
+    background-color: #ffffff;
+}
+
+.nav_inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: space-between;
+    max-width: 1600px;
+    background-color: #ffffff;
+}
+
+.nav_inner_logo {
+    padding-left: 228px;
+    background-color: #ffffff;
+}
+
+.nav_inner_logo img {
+    width: 131px;
+    height: 35px;
+}
+
+.nav_inner_links {
+    padding-right: 245px;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.nav_inner_links_line {
+    display: flex;
+    margin-right: 19px;
+    width: 20px;
+    background-color: #ffffff;
+}
+
+.nav_inner_links_line img {
+    width: 20px;
+}
+
+.nav_inner_links_outer_inner {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.nav_inner_links_outer_inner li {
+    padding-right: 45px;
+    background-color: #ffffff;
+}
+
+.nav_inner_links_outer_inner li a:hover {
+    color: black !important;
+}
+
+.nav_inner_links_search img {
+    height: 12px;
+    width: 12px;
+}

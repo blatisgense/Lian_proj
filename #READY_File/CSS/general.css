@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Обнуление и предустановки - личные*/
+* {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa;
+    color: #777777;
+}
