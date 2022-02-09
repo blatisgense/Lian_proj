@@ -1,7 +1,8 @@
 /* home_back-header_slider */
+
 let fon = 0;
-let image = document.getElementById("home_back-slide");
-let slides = ['home_back-header_slider home_back-header_slider_background1', 'home_back-header_slider home_back-header_slider_background2', 'home_back-header_slider home_back-header_slider_background3'];
+let image = document.getElementById("home-slide");
+let slides = ['home-header_slider home-header_slider_background1', 'home-header_slider home-header_slider_background2', 'home-header_slider home-header_slider_background3'];
 
 function nextSlide() {
     if (fon === 2) {

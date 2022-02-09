@@ -25,6 +25,8 @@
 }
 
 .home-header_slider {
+    transition-duration: 1.5s;
+    transition-property: background-image;
     height: calc(100% - 90px);
     background-size: cover;
     background-position: 50% 50%;

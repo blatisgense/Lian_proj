@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>lima_home</title>
+    <link href="../../CSS/general.css" rel="stylesheet">
+    <link href="../../CSS/home-main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../../background/home_back/header-pic-two.png" as="image" />
+    <link rel="preload" href="../../background/home_back/header-pic-three.png" as="image" />
+</head>
+<body>
+<header class="home-header">
+    <style>@import "../../CSS/navigation.css"; </style>
+<nav class="nav">
+    <div class="nav_inner">
+        <div class="nav_inner_logo">
+            <a href="https://docs.google.com"><img alt="nav-logo.png" src="../../icons/nav_img/logo.png"></a>
+        </div>
+        <div class="nav_inner_links">
+            <div class="nav_inner_links_line">
+                <img alt="line.png" src="../../icons/nav_img/highlight.png">
+            </div>
+            <div class="nav_inner_links_outer">
+                <ul class="nav_inner_links_outer_inner">
+                    <li><a href="https://docs.google.com">Home</a></li>
+                    <li><a href="https://docs.google.com">About</a></li>
+                    <li><a href="https://docs.google.com">Portfolio</a></li>
+                    <li><a href="https://docs.google.com">Blog</a></li>
+                    <li><a href="https://docs.google.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav_inner_links_search">
+                <a><img alt="search.png" src="../../icons/nav_img/Search.png"></a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="home-header_slider home-header_slider_background1" id="home-slide">
+        <div class="home-header_slider_inner">
+            <div class="home-header_slider_inner_back-butt">
+                <a onclick="backSlide()"><img alt="back-header-butt.png" src="../../icons/Home_img/back-header-butt.png"></a>
+            </div>
+            <div class="home-header_slider_inner_next-butt">
+                <a onclick="nextSlide()"><img alt="next-header-butt.png" src="../../icons/Home_img/next-header-butt.png"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<script src="../../JS/slider.js" type="text/javascript"></script>
+<style>@import "../../CSS/filter.css"; </style>
+<main class="main">
+    <div class="main_filter">
+        <div data-filter="all">all</div>
+        <div><img alt="line.png" src="../../icons/Filter_img/line.png"></div>
+        <div data-filter="logo">logo</div>
+        <div><img alt="line.png" src="../../icons/Filter_img/line.png"></div>
+        <div data-filter="mobile-app">mobile app</div>
+        <div><img alt="line.png" src="../../icons/Filter_img/line.png"></div>
+        <div data-filter="wordpress">wordpress</div>
+        <div><img alt="line.png" src="../../icons/Filter_img/line.png"></div>
+        <div data-filter="web-design">web design</div>
+        <div><img alt="line.png" src="../../icons/Filter_img/line.png"></div>
+        <div data-filter="ui-ux">ui/ux</div>
+        <div><img alt="line.png" src="../../icons/Filter_img/line.png"></div>
+        <div data-filter="branding">branding</div>
+    </div>
+    <div class="main_content">
+        <ul>
+            <li class="loadMore" data-cat="logo"><img alt="product1.png" src="../../icons/Filter_img/product1.png"></li>
+            <li class="loadMore" data-cat="mobile-app"><img alt="product2.png" src="../../icons/Filter_img/product2.png"></li>
+            <li class="loadMore" data-cat="wordpress"><img alt="product6.png" src="../../icons/Filter_img/product6.png"></li>
+            <li class="loadMore" data-cat="logo"><img alt="product4.png" src="../../icons/Filter_img/product4.png"></li>
+            <li class="loadMore" data-cat="ui-ux"><img alt="product5.png" src="../../icons/Filter_img/product5.png"></li>
+            <li class="loadMore" data-cat="mobile-app"><img alt="product3.png" src="../../icons/Filter_img/product3.png"></li>
+            <li class="loadMore" data-cat="web-design"><img alt="product7.png" src="../../icons/Filter_img/product7.png"></li>
+            <li class="loadMore" data-cat="logo"><img alt="product8.png" src="../../icons/Filter_img/product8.png"></li>
+            <li class="loadMore" data-cat="logo"><img alt="product9.png" src="../../icons/Filter_img/product9.png"></li>
+            <li class="loadMore" data-cat="wordpress"><img alt="product10.png" src="../../icons/Filter_img/product10.png"></li>
+            <!-- load more -->
+            <li class="before_loadMore" data-cat="ui-ux" load-more="true"><img alt="product5.png" src="../../icons/Filter_img/product5.png"></li>
+            <li class="before_loadMore" data-cat="mobile-app" load-more="true"><img alt="product3.png" src="../../icons/Filter_img/product3.png"></li>
+            <li class="before_loadMore" data-cat="web-design" load-more="true"><img alt="product7.png" src="../../icons/Filter_img/product7.png"></li>
+        </ul>
+    </div>
+    <div class="main_butt" id="Load_more_butt">
+        <button onclick="loadMoreFunck()">Load more</button>
+    </div>
+</main>
+<script src="../../JS/filter-loadmore.js" type="text/javascript"></script>
+<style>@import "../../CSS/footer.css"; </style>
+<footer class="footer">
+    <div class="footer-logo">
+        <a href="https://docs.google.com"><img alt="logo.png" src="../../icons/nav_img/logo.png"></a>
+    </div>
+    <div class="footer-social">
+        <div class="footer-social-inner">
+            <a href="https://docs.google.com"><img alt="face.png" src="../../icons/footer_img/face.png"></a>
+            <a href="https://docs.google.com"><img alt="google+.png" src="../../icons/footer_img/google+.png"></a>
+            <a href="https://docs.google.com"><img alt="twit.png" src="../../icons/footer_img/twit.png"></a>
+            <a href="https://docs.google.com"><img alt="linid.png" src="../../icons/footer_img/linid.png"></a>
+            <a href="https://docs.google.com"><img alt="ball.png" src="../../icons/footer_img/ball.png"></a>
+            <a href="https://docs.google.com"><img alt="prin.png" src="../../icons/footer_img/prin.png"></a>
+            <a href="https://docs.google.com"><img alt="inst.png" src="../../icons/footer_img/inst.png"></a>
+        </div>
+    </div>
+    <div class="footer-rights">by blatisgense <span class="footer-rights-all"> all right </span> reserved</div>
+</footer>
+</body>
+</html>
