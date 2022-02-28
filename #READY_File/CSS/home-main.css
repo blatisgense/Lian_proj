@@ -4,53 +4,68 @@
 }
 
 
-/* Шапка*/
-.home-header_slider_background1 {
-    background-image: url("../background/home_back/header-pic-one.png");
-}
-
-.home-header_slider_background2 {
-    background-image: url("../background/home_back/header-pic-two.png");
-}
-
-.home-header_slider_background3 {
-    background-image: url("../background/home_back/header-pic-three.png");
-}
-
-.home-header {
+.home_header {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-height: 900px;
 }
 
-.home-header_slider {
-    transition-duration: 1.5s;
-    transition-property: background-image;
-    height: calc(100% - 90px);
-    background-size: cover;
-    background-position: 50% 50%;
-    align-items: center;
-    justify-content: center;
+.home_header_slider-outer{
+    max-height: 810px;
     display: flex;
+    justify-content: center;
+    height: calc(100% - 90px);
 }
 
-.home-header_slider_inner {
+.home_header_slider {
+    height: 100%;
     width: 100%;
     max-width: 1600px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.home-header_slider_inner_back-butt, .home-header_slider_inner_next-butt {
-    margin: 0 112px;
+.home_header_slider_inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    display: flex;
+    transition: transform 1s ease;
 }
 
-.home-header_slider div, .home-header_slider a, .home-header_slider img {
+.home_header_slider_inner_slide{
+    height: 100%;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.slider__control{
+    transform: translateY(-100%);
+    position: absolute;
+    top: calc(50% - 21px);
+}
+
+.slider__control_left{
+    left: 10%;
+}
+
+.slider__control_right{
+    right: 10%;
+}
+
+.slider__control, .slider__control a, .slider__control img {
     background-color: unset;
 }
 
-.home-header_slider img:hover {
+.slider__control img:hover {
     background-color: black;
     border-radius: 50%;
 }

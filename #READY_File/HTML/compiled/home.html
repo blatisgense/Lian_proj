@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>lima_home</title>
@@ -11,11 +11,9 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="preload" href="../../background/home_back/header-pic-two.png" as="image" />
-    <link rel="preload" href="../../background/home_back/header-pic-three.png" as="image" />
 </head>
 <body>
-<header class="home-header">
+<header class="home_header">
     <style>@import "../../CSS/navigation.css"; </style>
 <nav class="nav">
     <div class="nav_inner">
@@ -41,13 +39,18 @@
         </div>
     </div>
 </nav>
-    <div class="home-header_slider home-header_slider_background1" id="home-slide">
-        <div class="home-header_slider_inner">
-            <div class="home-header_slider_inner_back-butt">
-                <a onclick="backSlide()"><img alt="back-header-butt.png" src="../../icons/Home_img/back-header-butt.png"></a>
+    <div class="home_header_slider-outer">
+        <div class="home_header_slider">
+            <div class="home_header_slider_inner">
+                <div class="home_header_slider_inner_slide" style="background-image: url('../../background/home_back/header-pic-one.png')"></div>
+                <div class="home_header_slider_inner_slide" style="background-image: url('../../background/home_back/header-pic-two.png')"></div>
+                <div class="home_header_slider_inner_slide" style="background-image: url('../../background/home_back/header-pic-three.png')"></div>
             </div>
-            <div class="home-header_slider_inner_next-butt">
-                <a onclick="nextSlide()"><img alt="next-header-butt.png" src="../../icons/Home_img/next-header-butt.png"></a>
+            <div class="slider__control_left slider__control" onclick="setUpListenerLeft() " >
+                <a><img alt="back-header-butt.png" src="../../icons/Home_img/back-header-butt.png"></a>
+            </div>
+            <div class="slider__control_right slider__control" onclick="setUpListenerRight() ">
+                <a><img alt="next-header-butt.png" src="../../icons/Home_img/next-header-butt.png"></a>
             </div>
         </div>
     </div>
